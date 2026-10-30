@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kontakt | MiR Trans Logistics</title>
+  <meta name="description" content="Kontaktní údaje a formulář MiR Trans Logistics.">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+  <link rel="preconnect" href="https://challenges.cloudflare.com">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <img src="assets/img/logo.jpg" alt="MiR Trans logo" />
+        <div class="brand-text">
+          <span class="brand-name">MiR Trans</span>
+          <span class="brand-tagline">Logistics</span>
+        </div>
+      </a>
+
+      <nav class="nav">
+        <input type="checkbox" id="nav-toggle">
+        <label for="nav-toggle" class="burger" aria-label="Otevřít menu">&#9776;</label>
+
+        <ul class="nav-list">
+          <li><a href="index.html">Domů</a></li>
+          <li class="has-sub">
+          <a href="sluzby.html">Služby</a>
+          <ul class="sub">
+            <li><a href="sluzby-mezinarodni.html">Mezinárodní přeprava</a></li>
+            <li><a href="sluzby-vnitrostatni.html">Vnitrostátní přeprava (ČR)</a></li>
+            <li><a href="sluzby-celovozova.html">Celovozová (FTL)</a></li>
+            <li><a href="sluzby-zberna.html">Sběrná služba</a></li>
+            <li><a href="sluzby-expresni.html">Expresní přeprava</a></li>
+            <li><a href="sluzby-skladovani.html">Skladování & logistika</a></li>
+            <li><a href="spedice.html">Spedice</a></li>
+          </ul>
+        </li>
+          <li><a href="spedice.html">Spedice</a></li>
+          <li><a href="vozovy-park.html">Vozový park</a></li>
+          <li><a href="kariera.html">Kariéra</a></li>
+          <li><a href="kontakty.html">Kontakty</a></li>
+          <li><a href="kontakt.html" class="btn">Nezávazná poptávka</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+<main>
+
+<section class="page-hero">
+  <div class="container"><h1>Kontakt & Nezávazná poptávka</h1><p>Vyplňte formulář nebo nás kontaktujte přímo e‑mailem či telefonicky.</p></div>
+  <p class="flash ok" id="flash-ok" style="display:none">&#x2705; Odesláno. Ozveme se vám co nejdříve.</p>
+  <p class="flash err" id="flash-err" style="display:none">&#x26A0;&#xFE0F; Odeslání se nezdařilo. Zkuste to znovu.</p>
+</section>
+
+<section class="container two-col">
+  <form class="contact-form" id="contact-form" novalidate>
+    <!-- Web3Forms access key – replace with your key from web3forms.com -->
+    <input type="hidden" name="access_key" value="ce8c474a-9876-4cb6-a702-1098cff090e2">
+    <!-- Optional: customise the subject line that arrives in your inbox -->
+    <input type="hidden" name="subject" value="Nezávazná poptávka z webu MiR Trans">
+    <!-- Honeypot anti-spam field (must stay empty) -->
+    <input type="checkbox" name="botcheck" style="display:none">
+
+    <label>Jméno a příjmení
+      <input type="text" name="name" required maxlength="120">
+    </label>
+    <label>Firma
+      <input type="text" name="company" maxlength="120">
+    </label>
+    <label>E-mail
+      <input type="email" name="email" required maxlength="200">
+    </label>
+    <label>Telefon
+      <input type="tel" name="phone" maxlength="30">
+    </label>
+    <label>Popis požadavku
+      <textarea name="message" rows="6" required maxlength="4000"
+        placeholder="Odkud – Kam, typ zboží, termín nakládky/dodání, zaslaní životopisu, poptání spediční činnosti..."></textarea>
+    </label>
+    <div class="cf-turnstile" data-sitekey="0x4AAAAAACKKwxeZvVAjmgzM"></div>
+    <button class="btn" type="submit" id="submit-btn">Odeslat poptávku</button>
+    <p class="note">Odesláním souhlasíte se zpracováním údajů pro účely zpětného kontaktu.</p>
+  </form>
+  <aside class="info-box">
+    <h3>Další kontakty</h3>
+    <p><strong>E‑mail:</strong> <a href="mailto:mirtrans@seznam.cz">mirtrans@seznam.cz</a><br>
+       <strong>Telefon:</strong>Šmídek tel.<a href="tel:+420 720 024 230">+420 720 024 230</a><br>
+       <strong>Telefon:</strong>Frank tel.<a href="tel:+420 601 054 640">+420 601 054 640</a><br>
+       <strong>Adresa:</strong>Heršpická 13, Brno</p>
+    <div class="map">
+      <iframe title="Mapa" width="100%" height="240" style="border:0"
+        loading="lazy" allowfullscreen
+        referrerpolicy="no-referrer-when-downgrade"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4418.928233029391!2d16.599109120821485!3d49.16928520891851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47129508859c9b8b%3A0x9922564689bc9ac9!2sMiR%20Trans!5e1!3m2!1ssk!2sus!4v1760114256846!5m2!1ssk!2sus">
+      </iframe>
+    </div>
+  </aside>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <h4>MiR Trans Logistics</h4>
+      <p>Spolehlivá doprava po celé Evropě. Moderní vozový park, osobní přístup a rychlé řešení.</p>
+    </div>
+    <div>
+      <h4>Rychlé odkazy</h4>
+      <ul>
+        <li><a href="sluzby.html">Služby</a></li>
+        <li><a href="kariera.html">Kariéra</a></li>
+        <li><a href="spedice.html">Spedice</a></li>
+        <li><a href="vozovy-park.html">Vozový park</a></li>
+        <li><a href="kontakty.html">Kontakty</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Poptávka</h4>
+      <p>Máte zájem o přepravu? Popište nám svůj požadavek a my se ozveme.</p>
+      <a class="btn" href="kontakt.html">Nezávazná poptávka</a>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <small>&copy; 2025 MiR Trans Logistics. Všechna práva vyhrazena.</small>
+  </div>
+</footer>
+<script src="assets/js/main.js"></script>
+<script>
+  document.getElementById('contact-form').addEventListener('submit', async function (e) {
+    e.preventDefault();
+
+    const form = e.target;
+    const btn = document.getElementById('submit-btn');
+    const flashOk = document.getElementById('flash-ok');
+    const flashErr = document.getElementById('flash-err');
+
+    // Basic client-side validation
+    if (!form.checkValidity()) {
+      form.reportValidity();
+      return;
+    }
+
+    btn.disabled = true;
+    btn.textContent = 'Odesílám…';
+    flashOk.style.display = 'none';
+    flashErr.style.display = 'none';
+
+    try {
+      const data = Object.fromEntries(new FormData(form));
+      const res = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify(data)
+      });
+      const json = await res.json();
+
+      if (res.ok && json.success) {
+        flashOk.style.display = '';
+        form.reset();
+        // Reset Turnstile widget after successful submit
+        if (window.turnstile) turnstile.reset();
+        flashOk.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      } else {
+        throw new Error(json.message || 'Submission failed');
+      }
+    } catch (err) {
+      flashErr.style.display = '';
+      flashErr.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    } finally {
+      btn.disabled = false;
+      btn.textContent = 'Odeslat poptávku';
+    }
+  });
+</script>
+</body>
+</html>
